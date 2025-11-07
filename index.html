@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungle Book</title>
+    <style>
+
+     *{
+        margin: 0;
+        padding: 0;
+     }
+     
+     body{
+        background-image: linear-gradient(0deg,rgb(57, 235, 33),rgb(14, 186, 228));
+        width: 100%;
+
+     }
+  
+    .navbar {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        background-color: white;
+    }
+
+    .navlinks {
+        list-style: none;
+        display:flex;
+        gap: 25px;
+    }
+
+    .navlinks a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-family: cursive;
+        font-weight: 500;
+        font-size: larger;
+    }
+
+    .navbutton{
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: 1px solid black;
+        background: transparent;
+        cursor: pointer;
+        font-family: cursive;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+     .container{
+        height:90vh;
+        display: flex;
+        
+        
+     }
+
+       .headingtext{
+        font-family:cursive;
+        font-weight:700;
+        font-size: 30px;
+        color: yellow;
+     }
+
+     .headingpara {
+        color:white;
+     }
+
+     .logo{
+        padding-left: 15px;
+        height: 50px;
+        width: 50px;
+     } 
+     .leftside {
+        display:flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 15%;
+        margin-right: 5%;
+        width: 50%;
+        text-align: center;
+     }
+     .rightside{
+        display:flex;
+        margin-top: 10%;
+        width: 40%;
+        height: 60%;
+        
+     }
+     .about-section {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 50px 10%;
+background: rgba(0, 0, 0, 0.4);
+}
+
+
+.left, .right {
+flex: 1;
+min-width: 280px;
+padding: 20px;
+}
+
+
+.left h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+
+.left p {
+line-height: 1.6;
+font-size: 1.1rem;
+}
+
+
+.right {
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px dashed #fff;
+min-height: 300px;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.1);
+}
+
+
+@media (max-width: 768px) {
+.about-section {
+padding: 30px;
+}
+.left h1 {
+font-size: 2rem;
+}
+}
+
+#service {
+    padding: 70px 0;
+    background: linear-gradient(#64e8e3, #3de87a);
+    text-align: center;
+}
+
+.service-title {
+    font-size: 45px;
+    color: #ffea00;
+    font-family: 'Comic Sans MS', cursive;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    width: 270px;
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease;
+}
+
+.service-box img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.service-box h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #00a34f;
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+}
+
+
+    </style>
+    <style>
+/* SERVICE SECTION */
+.service-section{
+    width: 100%;
+    padding: 80px 0;
+    background: linear-gradient(120deg, #ed719c, #78ffd6);
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-heading{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: #0b4f0b;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffffff;
+    font-family: 'Comic Sans MS';
+}
+
+.service-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-box{
+    background: #ffffffb0;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.4s;
+    backdrop-filter: blur(5px);
+}
+
+.service-box:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.service-box img{
+    width: 110px;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.service-box:hover img{
+    transform: scale(1.1);
+}
+
+.service-box h3{
+    font-size: 22px;
+    color: #056105;
+    font-family: 'Comic Sans MS';
+}
+
+.service-box p{
+    font-size: 15px;
+    color: #333;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+    
+   <nav class="navbar">
+        <img class="logo" src="/image/panda_logo.png" alt="Logo">
+        <ul class="navlinks">
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="/service.html">Service</a></li> 
+        </ul>
+        <div class="btn">
+             <button class="navbutton"><a href="signin.html">sign in</a></button>
+             <button class="navbutton"><a href="login.html">login</a></button>
+        </div>
+   </nav>
+   <div class="container">
+
+  <div class="leftside">
+    <div class="headingtext">
+        <h1>The Jungle Book</h1>
+    </div>
+
+    <div class="headingpara">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi beatae dolorem recusandae ad hic eligendi suscipit officia libero, reprehenderit molestias voluptates odit minus nihil, pariatur voluptatibus, rerum nobis. Ipsum, reprehenderit.</p>
+    </div>
+  </div>
+  <div class="rightside">
+       <img src="/image/many-cute-animals-bamboo-forest_1308-38589-removebg-preview.png" alt="image not found">
+  </div>
+   </div>
+</div>
+<section class="about-section" id="About">
+
+<div class="left">
+<h1>About Me</h1>
+<p>
+"Like Mowgli growing up in the lush heart of the jungle, I am someone who learns
+from the world around me. I believe in adventure, kindness, curiosity, and courage.
+I grow every day — exploring new paths, new lessons, and new dreams.
+The jungle teaches us that every leaf has a story, every breeze carries wisdom,
+and every challenge shapes us into who we are meant to be."
+</p>
+</div>
+
+
+<section class="about-image">
+    <div class="right">
+<!-- Add your image here later -->
+<span>Image Will Be Here</span>
+</div>
+</section>
+<section class="service-section" id="service">
+    <h2 class="service-heading">Our Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-box">
+            <img src="https://i.ibb.co/nR9rF1M/elephant.png">
+            <h3>Adventure Stories</h3>
+            <p>Explore thrilling jungle adventures full of courage, friendship and nature.</p>
+        </div>
+
+        <div class="service-box">
+            <img src="https://i.ibb.co/zQZqPJP/tiger.png">
+            <h3>Character Lessons</h3>
+            <p>Learn kindness, bravery, team spirit and respect for life around us.</p>
+        </div>
+
+        <div class="service-box">
+            <img src="https://i.ibb.co/4whnJ87/monkey.png">
+            <h3>Fun Activities</h3>
+            <p>Play jungle puzzles, quizzes and creative drawing challenges!</p>
+        </div>
+
+        <div class="service-box">
+            <img src="https://i.ibb.co/vvwYQ5x/parrot.png">
+            <h3>Storytelling Sessions</h3>
+            <p>Enjoy interactive storytelling with voice acting and fun expressions.</p>
+        </div>
+
+    </div>
+</section>
+
+
+    
+</body>
+</html>
