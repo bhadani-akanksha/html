@@ -3,146 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
-    <style>
-        *{
-          margin:0% ;  
-          padding :0%;
-        
-        }
-body {
+    <title>Login</title>
 
-            background-image: linear-gradient(0deg, rgb(91,230,158),rgb(23,129,243));
-            width: 100%;
-            height: 100vh;
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
 
-        }
+body{
+    height: 100vh;
+    background: linear-gradient(120deg, #2bd96b, #1ec6e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .navbar {
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        align-items: center;
-        background-color: white;
-    }
+.login-card{
+    width: 350px;
+    padding: 35px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    text-align: center;
+}
 
-    .navlinks {
-        list-style: none;
-        display:flex;
-        gap: 25px;
-    }
+.login-card h2{
+    color: #0d4f28;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-shadow: 1px 1px white;
+}
 
-    .navlinks a{
-        text-decoration: none;
-        color: black;
-        font-size: 15px;
-        font-family: cursive;
-        font-weight: 500;
-        font-size: larger;
-    }
+.login-card input{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.7);
+    font-size: 15px;
+}
 
-    .navbutton{
-        padding: 8px 16px;
-        border-radius: 20px;
-        border: 1px solid black;
-        background: transparent;
-        cursor: pointer;
-        font-family: cursive;
-        font-size: medium;
-        font-weight: 500;
-    }
+.login-btn{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: #0d7c37;
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+}
 
-     .container{
-        height:50vh;
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
+.login-btn:hover{
+    background: #085021;
+    transform: scale(1.05);
+}
 
-        form{
-            font-size: 30px;
-            width: 100%;
-            border: 1 px solid black;
-            margin:
- }
+.login-card p{
+    margin-top: 12px;
+    font-size: 14px;
+}
 
-     .leftside {
-        display:flex;
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 10%;
-        margin-right: 5%;
-        width: 10%;
-        text-align: center;
-     }
-     .rightside{
-        display:flex;
-        margin-top: 10%;
-        width: 40%;
-        height: 60%;
-        
-     }
-
-     .headingtext{
-        font-family:cursive;
-        font-weight:700;
-        font-size: 30px;
-        color: yellow;
-     }
-
-     .headingpara {
-        color:white;
-     }
-    </style>
+.login-card a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #04458b;
+}
+</style>
 </head>
 <body>
-    <nav class="navbar">
-        
-        <ul class="navlinks">
-            <li><a href="">Home</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Service</a></li> 
-        </ul>
-        <div class="btn">
-          <button class="nav"><a href="signin.html">sign-in</a></button>
-          <button class="nav"><a href="login.html">login</a></button>
-             
-                
-             
-            
 
-             
+<div class="login-card">
+    <h2>Welcome Back 🌿</h2>
+    <form>
+        <input type="email" placeholder="Enter Email" required>
+        <input type="password" placeholder="Enter Password" required>
+        <button class="login-btn">Login</button>
 
-             </div>
-   </nav>
-   <div class="container">
-    <div clas="form">
-        <form>
-            <h1>login</h1>
-            <br>
-            <label for="">user name</label>
-            <br>
-            <input type="text" id="fname">
-            <br>
-            <label for="">password</label>
-            <br>
-            <input type="text" id="1name">
-            <br>
-            <label for="">Confirm Password</label>
-            <br>
-            <input type="text" id="name">
-            <br>
-            <br>
-            <input type="submit" value="submit" id="submit">
-             <input type="cheakbox" name=""id="">
+        <p>Don't have an account? <a href="signin.html">Sign Up</a></p>
+    </form>
+</div>
 
-
- </form>
-
-    </div>
-  
 </body>
 </html>
-
