@@ -1,43 +1,126 @@
-<style>
-/* SERVICE SECTION */
-.service-section{
-    width: 100%;
-    padding: 80px 0;
-    background: linear-gradient(120deg, #a8ff78, #78ffd6);
-    font-family: 'Poppins', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungle Book - Services</title>
 
-.service-heading{
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-    color: #0b4f0b;
-    margin-bottom: 40px;
-    text-shadow: 2px 2px #ffffff;
-    font-family: 'Comic Sans MS';
-}
+    <style>
+        /* SERVICE SECTION */
+        .service-section{
+            width: 100%;
+            padding: 80px 0;
+            background: linear-gradient(120deg, #a8ff78, #78ffd6);
+            font-family: 'Poppins', sans-serif;
+        }
 
-/* Grid layout */
-.service-container{
-    width: 85%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 35px;
-}
+        .service-heading{
+            text-align: center;
+            font-size: 45px;
+            font-weight: bold;
+            color: #0b4f0b;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px #ffffff;
+            font-family: 'Comic Sans MS';
+        }
 
-/* Boxes */
-.service-box{
-    background: rgba(255,255,255,0.8);
-    padding: 25px;
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    transition: 0.4s;
-    backdrop-filter: blur(5px);
-    border: 2px solid transparent;
-}
+        /* Grid layout */
+        .service-container{
+            width: 85%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 35px;
+        }
 
-.service-box:hover{
-    transform: translateY(-12px);
-    box-shadow: 0 12p
+        /* Boxes */
+        .service-box{
+            background: rgba(255,255,255,0.8);
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: 0.4s;
+            backdrop-filter: blur(5px);
+            border: 2px solid transparent;
+        }
+
+        .service-box:hover{
+            transform: translateY(-12px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+            border-color: #0b4f0b;
+        }
+
+        .service-box img{
+            width: 110px;
+            margin-bottom: 15px;
+            transition: 0.4s ease-in-out;
+        }
+
+        .service-box:hover img{
+            transform: scale(1.15) rotate(5deg);
+        }
+
+        .service-box h3{
+            font-size: 22px;
+            color: #056105;
+            margin-top: 5px;
+            font-family: 'Comic Sans MS';
+        }
+
+        .service-box p{
+            font-size: 15px;
+            color: #333;
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+
+        /* Responsive - for mobile */
+        @media (max-width: 600px){
+            .service-heading{
+                font-size: 35px;
+            }
+            .service-box img{
+                width: 90px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- SERVICE SECTION -->
+    <section class="service-section" id="service">
+        <h2 class="service-heading">Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-box">
+                <img src="https://i.ibb.co/nR9rF1M/elephant.png" alt="Elephant">
+                <h3>Adventure Stories</h3>
+                <p>Explore thrilling jungle adventures full of courage, friendship and nature.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="https://i.ibb.co/zQZqPJP/tiger.png" alt="Tiger">
+                <h3>Character Lessons</h3>
+                <p>Learn kindness, bravery, team spirit and respect for life around us.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="https://i.ibb.co/4whnJ87/monkey.png" alt="Monkey">
+                <h3>Fun Activities</h3>
+                <p>Play jungle puzzles, quizzes and creative drawing challenges!</p>
+            </div>
+
+            <div class="service-box">
+                <img src="https://i.ibb.co/vvwYQ5x/parrot.png" alt="Parrot">
+                <h3>Storytelling Sessions</h3>
+                <p>Enjoy interactive storytelling with voice acting and fun expressions.</p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
